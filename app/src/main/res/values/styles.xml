@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--自定义时间选择dialog-->
+    <style name="TimeSelectDialog" parent="@android:style/Theme.Dialog">
+        <!-- 设置dialog的内容背景，内容后面的黑边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置dialog的内容前景，在前景前的遮罩  -->
+        <item name="android:background">#00000000</item>
+        <!-- 边框 @null不设置 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否覆盖内容 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 动画执行样式 -->
+        <item name="android:windowAnimationStyle">@null</item>
+
+        <!-- 是否设置显示window阴影 -->
+        <!-- 是否背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 设置背景模糊的透明度-->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/qb_px_924"
+    android:layout_height="@dimen/qb_px_914"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sharp_community_dialog_call"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_162"
+            android:background="@color/transparent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我是标题"
+                android:textColor="@color/color_text_666666"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <!--选择器-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_0"
+            android:layout_marginLeft="@dimen/qb_px_53"
+            android:layout_marginRight="@dimen/qb_px_53"
+            android:layout_weight="1"
+            android:background="@drawable/eidt_ic_input_box"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/qb_px_10"
+            android:paddingTop="@dimen/qb_px_10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingRight="@dimen/qb_px_10"
+                android:orientation="horizontal">
+
+                <china.test.customview.WheelView
+                    android:id="@+id/wheelview_year"
+                    android:layout_width="@dimen/qb_px_230"
+                    android:layout_height="@dimen/qb_px_150"
+                    android:layout_gravity="center_vertical" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="年"
+                    android:textColor="@color/color_text_666666"
+                    android:textSize="16sp" />
+
+                <china.test.customview.WheelView
+                    android:id="@+id/wheelview_month"
+                    android:layout_width="@dimen/qb_px_170"
+                    android:layout_height="@dimen/qb_px_130"
+                    android:layout_gravity="center_vertical" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="月"
+                    android:textColor="@color/color_text_666666"
+                    android:textSize="16sp" />
+
+                <china.test.customview.WheelView
+                    android:id="@+id/wheelview_day"
+                    android:layout_width="@dimen/qb_px_170"
+                    android:layout_height="@dimen/qb_px_130"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="日"
+                    android:textColor="@color/color_text_666666"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/qb_px_39"
+                android:layout_marginTop="@dimen/qb_px_35"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/qb_px_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="@dimen/qb_px_250"
+                        android:layout_height="@dimen/qb_px_98"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/selector_calender_cancle_btn"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="取消"
+                        android:textColor="@color/color_text_a8a8a8"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_confirm"
+                        android:layout_width="@dimen/qb_px_250"
+                        android:layout_height="@dimen/qb_px_98"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/selector_calender_agree_btn"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textColor="@color/color_bg_ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

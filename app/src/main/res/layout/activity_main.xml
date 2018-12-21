@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_data1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_144"
+        android:layout_marginLeft="@dimen/qb_px_40"
+        android:layout_marginRight="@dimen/qb_px_40"
+        android:layout_marginTop="@dimen/qb_px_40"
+        android:background="#8892f4"
+        android:gravity="center"
+        android:textColor="@color/color_bg_ffffff"
+        android:hint="在这里显示年月日"
+        android:textColorHint="@color/color_bg_ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_style1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_144"
+        android:layout_marginLeft="@dimen/qb_px_40"
+        android:layout_marginRight="@dimen/qb_px_40"
+        android:layout_marginTop="@dimen/qb_px_40"
+        android:background="#f0f0f0"
+        android:gravity="center"
+        android:textColor="#999999"
+        android:text="年月日选择"
+        android:textSize="18sp" />
+
+</LinearLayout>
